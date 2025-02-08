@@ -1,0 +1,51 @@
+---
+import PointLearning from "./PointLearning.astro";
+
+const description = {
+  title: "Lo que te llevarás",
+  points: [
+    {
+      title: "✅ Entenderás el verdadero escenario en el que nos encontramos",
+    },
+    {
+      title:
+        "✅ Aprenderán a elevar y mantener su energía en alta frecuencia de manera constante.",
+    },
+    {
+      title:
+        "✅ Descubrirán cómo hackear el sistema corrupto desde dentro utilizando su Ikigai.",
+    },
+    {
+      title:
+        "✅ Obtendrán claridad en su misión de vida y propósitos espirituales.",
+    },
+    {
+      title:
+        "✅ Desparasitarás y renovarás tu ser en todos los niveles: físico, mental, energético y espiritual.",
+    },
+  ],
+};
+---
+
+<div>
+  <h2
+    class='mb-8 text-3xl text-center text-accent sm:text-4xl md:text-5xl lg:text-6xl'
+  >
+    {description.title}
+  </h2>
+  <ul class='flex flex-col gap-4 mt-4 text-left list-none'>
+    {
+      description.points.map((point) => (
+        <li>
+          <div class='relative flex flex-col items-start justify-center gap-4 p-6 text-white transition-all duration-1000 shadow-lg bg-gradient-to-r from-secondary to-accent hover:from-accent hover:to-secondary rounded-xl'>
+            <div class='absolute top-0 w-10 h-1 rounded-full left-4 bg-secondary' />
+            <h3 class='text-lg leading-snug sm:text-xl md:text-2xl lg:text-3xl'>
+              {point.title}
+            </h3>
+            <div class='absolute inset-0 bg-gradient-to-tl from-sebg-secondary/10 via-transparent to-[#A85FE8]/10 rounded-xl opacity-0 hover:opacity-100 transition-opacity duration-300' />
+          </div>
+        </li>
+      ))
+    }
+  </ul>
+</div>

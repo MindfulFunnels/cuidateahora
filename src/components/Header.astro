@@ -1,0 +1,30 @@
+---
+// Header
+const { title } = Astro.props;
+---
+
+<div
+  class='relative flex flex-col items-center justify-center gap-6 pt-10 text-center'
+>
+  <!-- Fondo translúcido detrás del título -->
+
+  <!-- Título principal -->
+  <h1
+    class='text-5xl font-bold text-white sm:text-6xl lg:text-7xl'
+    style="
+      font-family: 'Bowlby One SC', serif;
+      -webkit-text-stroke: 2px #6c4f3d;
+      text-stroke: 2px #6c4f3d;
+    "
+  >
+    {title}
+  </h1>
+</div>
+
+<style>
+  h1 {
+    font-family: "Bowlby One SC", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+</style>

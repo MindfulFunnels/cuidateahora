@@ -1,0 +1,56 @@
+---
+import PointLearning from "./PointLearning.astro";
+
+interface Point {
+  title: string;
+  description: string;
+}
+
+const description = {
+  title: "¿Qué Aprenderás en esta Masterclass?",
+  points: [
+    {
+      title: "🔥 Liberación de Tensiones",
+      description:
+        "Técnicas de yoga que te ayudarán a soltar el estrés acumulado y sentirte más relajada.",
+    },
+    {
+      title: "💤 Relajación Profunda",
+      description:
+        "Aprende a calmar la mente y preparar tu cuerpo para un descanso reparador.",
+    },
+    {
+      title: "🌿 Bienestar Integral",
+      description:
+        "Métodos para reducir la ansiedad y conectar con tu cuerpo de forma natural.",
+    },
+    {
+      title: "💪 Flexibilidad y Movimiento",
+      description:
+        "Cómo moverte sin dolor y fortalecer tu cuerpo sin exigirte de más.",
+    },
+    {
+      title:
+        "No importa si nunca has practicado yoga o relajación antes. Este evento está diseñado para que cualquier persona pueda beneficiarse sin importar su edad o experiencia previa.",
+      description: "",
+    },
+  ],
+};
+---
+
+<div>
+  <h2
+    class='mb-8 text-3xl font-thin text-center text-accent sm:text-4xl md:text-5xl lg:text-6xl'
+  >
+    Que aprenderás
+  </h2>
+  <ul class='flex flex-col gap-4 mt-4 text-left list-none'>
+    {
+      description.points.map((point: Point) => (
+        <li>
+          <PointLearning title={point.title} description={point.description} />
+        </li>
+      ))
+    }
+  </ul>
+</div>

@@ -1,0 +1,28 @@
+---
+import clientData from "../data/config";
+const { text } = Astro.props;
+---
+
+<a href='#register' class='hover:animate-pulse'>
+  <button
+    class='px-10 py-6 text-xl text-white border shadow-lg bg-secondary border-accent rounded-xl sm:text-lg md:text-xl lg:text-2xl animate-jump'
+  >
+    {text}
+  </button>
+</a>
+
+<style>
+  @keyframes jump {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-20px);
+    }
+  }
+
+  .animate-jump {
+    animation: jump 1s infinite;
+  }
+</style>

@@ -1,0 +1,43 @@
+---
+import PointLearning from "./PointLearning.astro";
+const description = {
+  title: "¿Cómo Será Tu Transformación?",
+  points: [
+    {
+      title:
+        "🌸 Imagina despertarte sin dolores y con energía para disfrutar tu día.",
+      description: "",
+    },
+    {
+      title:
+        "🌸 Imagina acostarte sabiendo que tendrás un sueño profundo y reparador.",
+      description: "",
+    },
+    {
+      title:
+        "🌸 Imagina encontrar un momento solo para ti, para relajarte y cuidarte.",
+      description: "",
+    },
+    {
+      title:
+        "Este es el primer paso para sentirte más conectada contigo misma, con menos estrés y más vitalidad.",
+      description: "",
+    },
+  ],
+};
+---
+
+<div>
+  <h2
+    class='mb-8 text-3xl text-center text-accent sm:text-4xl md:text-5xl lg:text-6xl'
+  >
+    {description.title}
+  </h2>
+  <ul class='flex flex-col gap-4 mt-4 text-left list-none'>
+    {
+      description.points.map((point) => (
+        <PointLearning title={point.title} description={point.description} />
+      ))
+    }
+  </ul>
+</div>
