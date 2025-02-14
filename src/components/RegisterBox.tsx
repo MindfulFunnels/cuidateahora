@@ -111,7 +111,7 @@ export default function RegisterBox() {
         />
 
         <PhoneInput
-          country='es' // País inicial (Argentina)
+          country={"es"}
           value={phone}
           onChange={setPhone}
           inputProps={{
@@ -132,7 +132,7 @@ export default function RegisterBox() {
             ve: "Venezuela",
             // Agrega más países según sea necesario
           }}
-          placeholder='123456789'
+          placeholder='+123456789'
           enableSearch={true} // Habilitar búsqueda
           containerStyle={{
             width: "100%",
@@ -144,7 +144,7 @@ export default function RegisterBox() {
             transition: "box-shadow 0.3s ease-in-out", // Suavizar el focus
           }}
           searchPlaceholder='Buscar' // Placeholder del campo de búsqueda
-          countryCodeEditable={false} // No permitir editar el prefijo
+          countryCodeEditable={true} // No permitir editar el prefijo
           inputStyle={{
             width: "100%",
             padding: "16px",
