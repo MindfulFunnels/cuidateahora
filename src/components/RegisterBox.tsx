@@ -214,7 +214,7 @@ export default function RegisterBox() {
         ) : (
           <button
             type='submit'
-            className='w-full px-10 py-4 text-lg font-bold text-white transition-transform duration-300 bg-red-600 rounded-lg hover:bg-red-700 hover:scale-105'
+            className='w-full px-10 py-4 text-lg font-semibold text-white transition-transform duration-300 bg-red-600 rounded-lg hover:bg-red-700 hover:scale-105'
             onClick={handleSubmit}
           >
             Registrarme
