@@ -23,32 +23,33 @@ const { title, subtitle, eventDateForCountdown } = clientData;
     <div>
       <div class='flex flex-col items-center justify-center gap-10 pb-10'>
         <!-- Subtítulo con fondo translúcido -->
-        <p
-          class='max-w-4xl px-4 py-2 text-lg font-medium rounded-lg shadow-lg bg-white/80 text-secondary sm:text-xl lg:text-2xl'
-        >
-          ¿Te sientes abrumado por el estrés diario? ¿Buscas un momento para ti,
-          para cuidarte y mimarte? Te invito a unirte a mi Masterclass de Yoga
-          para Eliminar Tensiones, una experiencia transformadora que cambiará
-          tu vida.
-        </p>
-        <Date />
+        <h2 class='prose prose-2xl text-accent'>
+          Regístrate en este Evento Online Gratuito y descubre cómo liberar el
+          estrés, sanar dolores, relajar tu cuerpo y mejorar tu sueño con
+          técnicas de yoga y respiración guiada, tanto para principiantes como
+          para expertos.✨ <span class='block font-semibold'
+            >¡Transforma tu bienestar desde hoy!</span
+          >
+        </h2>
         <Countdown deadline={eventDateForCountdown} client:load />
+        <Date />
       </div>
       <div
         class='flex flex-col items-center justify-center w-full gap-10 md:gap-20 lg:flex-row'
+        id='register'
       >
+        <RegisterBox client:only='react' />
         <div>
           <img
             src='/header.jpg'
             alt=''
-            class='h-[450px] rounded-lg border-4 border-primary transition-transform duration-300 animate-jiggle'
+            class='h-[450px] rounded-lg border-4 border-primary transition-transform duration-300 hover:animate-swing'
           />
         </div>
         <div
           class='flex flex-col items-center justify-center gap-2'
           id='register'
         >
-          <RegisterBox client:only='react' />
         </div>
       </div>
     </div>
@@ -58,13 +59,13 @@ const { title, subtitle, eventDateForCountdown } = clientData;
     <CallAction text='Sí, quiero participar y sentirme mejor' />
     <Transformation />
     <CallAction text='Regístrate gratis ahora' />
-    <WelcomeBonus />
+    <!-- <WelcomeBonus /> -->
     <CallAction text='Quiero mis regalos y mi acceso a la masterclass' />
     <History />
     <!-- <CallAction text='Regístrate gratis ahora' /> -->
-    <h2 class='text-3xl text-center text-accent'>
+    <!-- <h2 class='text-3xl text-center text-accent'>
       💡 No dejes pasar esta oportunidad de regalarte bienestar y paz interior.
-    </h2>
+    </h2> -->
     <h2 class='text-3xl text-center text-accent'>
       📅 Reserva tu lugar ahora y prepárate para la transformación.
     </h2>

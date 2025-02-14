@@ -61,6 +61,7 @@
 - Footer (Contacto, redes sociales, terminos y condiciones, politica de privacidad)
 
 Thank you page:
+![alt text](image.png)
 
 - Gracias por registrarte
 - Mencionar regalos (opcional)

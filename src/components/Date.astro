@@ -13,33 +13,23 @@ const eventTimes = [
 ];
 ---
 
-<div>
-  <!-- Fechas -->
-  <div class='flex flex-col justify-center gap-8 mt-8 text-center md:flex-row'>
-    <!-- Fecha 1 -->
-    <h2 class='text-3xl font-bold text-white lg:text-4xl'>
-      MARTES <span class='font-bold text-secondary'>{firstClass.day} </span> DE {
-        firstClass.month
-      }
-    </h2>
-    <!-- Fecha 2 -->
-    <h2 class='text-3xl font-bold text-white lg:text-4xl'>
-      JUEVES <span class='font-bold text-secondary'>{lastClass.day} </span>DE {
-        lastClass.month
-      }
-    </h2>
-  </div>
+<div class='flex flex-col items-center justify-center gap-4'>
+  <!-- Día 01 -->
+  <img src='/dia1.png' alt='' class='w-full' />
 
-  <!-- Horarios internacionales -->
-  <ul class='grid grid-cols-1 gap-4 mt-6 text-lg md:grid-cols-2 lg:grid-cols-4'>
-    {
-      eventTimes.map((event) => (
-        <li class='flex items-center justify-center gap-2 text-2xl text-secondary'>
-          <span class={event.flag} />
-          <span class='font-bold'>{event.country}</span>:
-          <span class='text-white'>{event.time}</span>
-        </li>
-      ))
-    }
-  </ul>
+  <!-- Día 02 -->
+  <img src='/dia2.png' alt='' class='w-full' />
 </div>
+
+<!-- Horarios internacionales -->
+<!-- <ul class='grid grid-cols-1 gap-4 mt-6 text-lg md:grid-cols-2 lg:grid-cols-4'>
+  {
+    eventTimes.map((event) => (
+      <li class='flex items-center justify-center gap-2 text-2xl text-secondary'>
+        <span class={event.flag} />
+        <span class='font-bold'>{event.country}</span>:
+        <span class='text-accent'>{event.time}</span>
+      </li>
+    ))
+  }
+</ul> -->

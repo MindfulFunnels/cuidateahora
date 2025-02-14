@@ -7,12 +7,12 @@ interface Point {
 }
 
 const description = {
-  title: "¿Qué Aprenderás en esta Masterclass?",
+  title: "¿Qué Aprenderás?",
   points: [
     {
       title: "🔥 Liberación de Tensiones",
       description:
-        "Técnicas de yoga que te ayudarán a soltar el estrés acumulado y sentirte más relajada.",
+        "Técnicas de yoga que te ayudarán a soltar el estrés acumulado, sentirte más relajada y en paz.",
     },
     {
       title: "💤 Relajación Profunda",
@@ -27,12 +27,12 @@ const description = {
     {
       title: "💪 Flexibilidad y Movimiento",
       description:
-        "Cómo moverte sin dolor y fortalecer tu cuerpo sin exigirte de más.",
+        "Cómo moverte sin dolor y fortalecer tu cuerpo sin exigirte de más para prevenir lesiones.",
     },
     {
-      title:
-        "No importa si nunca has practicado yoga o relajación antes. Este evento está diseñado para que cualquier persona pueda beneficiarse sin importar su edad o experiencia previa.",
-      description: "",
+      title: "⌚ Tiempo para ti",
+      description:
+        "Aprende a priorizar tu bienestar y a dedicarte tiempo para cuidarte y sentirte mejor.",
     },
   ],
 };
@@ -42,7 +42,7 @@ const description = {
   <h2
     class='mb-8 text-3xl font-thin text-center text-accent sm:text-4xl md:text-5xl lg:text-6xl'
   >
-    Que aprenderás
+    {description.title}
   </h2>
   <ul class='flex flex-col gap-4 mt-4 text-left list-none'>
     {
@@ -53,4 +53,12 @@ const description = {
       ))
     }
   </ul>
+  <h3
+    class='mt-2 text-lg leading-snug sm:text-xl md:text-2xl lg:text-3xl text-accent'
+  >
+    No importa si <span class='underline'
+      >has practicado yoga o relajación antes.</span
+    > Este evento está diseñado para que cualquier persona pueda beneficiarse sin
+    importar su edad o experiencia previa.
+  </h3>
 </div>

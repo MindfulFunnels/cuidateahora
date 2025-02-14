@@ -1,6 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 import animations from "@midudev/tailwind-animations";
 import clientData from "./src/data/config";
+import typography from "@tailwindcss/typography";
+
 const { colors } = clientData;
 export default {
   content: [
@@ -15,5 +17,5 @@ export default {
       },
     },
   },
-  plugins: [animations, require("flowbite/plugin")],
+  plugins: [animations, require("flowbite/plugin"), typography],
 };
