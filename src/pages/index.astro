@@ -23,14 +23,18 @@ const { title, subtitle, eventDateForCountdown } = clientData;
     <div>
       <div class='flex flex-col items-center justify-center gap-10 pb-10'>
         <!-- Subtítulo con fondo translúcido -->
-        <h2 class='prose prose-2xl text-accent'>
-          Regístrate en este Evento Online Gratuito y descubre cómo liberar el
-          estrés, sanar dolores, relajar tu cuerpo y mejorar tu sueño con
-          técnicas de yoga y respiración guiada, tanto para principiantes como
-          para expertos.✨ <span class='block font-semibold'
-            >¡Transforma tu bienestar desde hoy!</span
+        <div class='bg-opacity-100 rounded-lg shadow-xl'>
+          <h2
+            class='p-4 text-xl text-center rounded-lg text-accent md:text-2xl lg:text-3xl bg-primary bg-opacity-10'
           >
-        </h2>
+            Regístrate en este Evento Online Gratuito y descubre cómo liberar el
+            estrés, sanar dolores, relajar tu cuerpo y mejorar tu sueño con
+            técnicas de yoga y respiración guiada, tanto para principiantes como
+            para expertos. <span class='block font-semibold underline'
+              >¡Transforma tu bienestar desde hoy!</span
+            >
+          </h2>
+        </div>
         <Countdown deadline={eventDateForCountdown} client:load />
         <Date />
       </div>
@@ -58,7 +62,7 @@ const { title, subtitle, eventDateForCountdown } = clientData;
     <WhatYouWillLearn />
     <CallAction text='Sí, quiero participar y sentirme mejor' />
     <Transformation />
-    <CallAction text='Regístrate gratis ahora' />
+    <!-- <CallAction text='Regístrate gratis ahora' /> -->
     <!-- <WelcomeBonus /> -->
     <CallAction text='Quiero mis regalos y mi acceso a la masterclass' />
     <History />
