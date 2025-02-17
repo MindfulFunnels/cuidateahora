@@ -27,12 +27,12 @@ const { title, subtitle, eventDateForCountdown } = clientData;
       </h1>
       <div class='flex flex-col gap-10'>
         <Countdown deadline={eventDateForCountdown} client:load />
-      </div>
-      <div
-        class='flex flex-col items-center justify-center w-full gap-10 lg:flex-row'
-      >
-        <RegisterBox client:only='react' />
-        <Date />
+        <div
+          class='flex flex-col items-center justify-center w-full gap-6 lg:flex-row'
+        >
+          <RegisterBox client:only='react' />
+          <Date />
+        </div>
       </div>
     </div>
     <ItsForYou />
