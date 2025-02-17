@@ -16,22 +16,24 @@ const { title, subtitle, eventDateForCountdown } = clientData;
 
 <Layout>
   <div
-    class='flex flex-col items-center justify-center w-full max-w-6xl gap-6 p-4 text-center'
+    class='flex flex-col items-center justify-center w-full max-w-6xl gap-20 p-4 text-center'
   >
-    <h1
-      class='font-semibold text-2xl lg:text-3xl xl:text-5xl bg-clip-text text-transparent bg-gradient-to-tl from-[#ffa9a9] to-[#444444] pb-6'
-    >
-      Regístrate al evento online para liberar tensiones y estrés, recargar el
-      cuerpo y tener un sueño reparador
-    </h1>
-    <div class='flex flex-col gap-10'>
-      <Countdown deadline={eventDateForCountdown} client:load />
-    </div>
-    <div
-      class='flex flex-col items-center justify-center w-full gap-10 lg:flex-row'
-    >
-      <RegisterBox client:only='react' />
-      <Date />
+    <div>
+      <h1
+        class='font-semibold text-2xl lg:text-3xl xl:text-5xl bg-clip-text text-transparent bg-gradient-to-tl from-[#ffa9a9] to-[#444444] pb-6'
+      >
+        Regístrate al evento online para liberar tensiones y estrés, recargar el
+        cuerpo y tener un sueño reparador
+      </h1>
+      <div class='flex flex-col gap-10'>
+        <Countdown deadline={eventDateForCountdown} client:load />
+      </div>
+      <div
+        class='flex flex-col items-center justify-center w-full gap-10 lg:flex-row'
+      >
+        <RegisterBox client:only='react' />
+        <Date />
+      </div>
     </div>
     <ItsForYou />
     <CallAction
