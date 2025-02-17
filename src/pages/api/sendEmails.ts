@@ -114,7 +114,7 @@ export const POST: APIRoute = async ({ request }) => {
             🔔 IMPORTANTE: Para que aproveches al máximo esta oportunidad:
         </h3>
         <ul>
-            <li>✅ Únete al grupo privado de WhatsApp para recibir contenido exclusivo y prepararte antes del evento 👉 [Link para unirse] </li>
+            <li>✅ Únete al grupo privado de WhatsApp para recibir contenido exclusivo y prepararte antes del evento 👉 <a href="https://chat.whatsapp.com/LyDYRYyWVrRBqmXVFykhSj" target="_blank">Unirme</a> </li>
             <li>✅ Añade el evento a tu calendario para no olvidarlo.</li>
             <li>✅ Estate atento/a a tu correo y a la comunidad de WhatsApp donde te enviaremos más detalles y materiales antes del evento.</li>            
         </ul>
