@@ -1,5 +1,5 @@
 ---
-const { title, description } = Astro.props;
+const { title, description, subtitle } = Astro.props;
 ---
 
 <div
@@ -8,5 +8,8 @@ const { title, description } = Astro.props;
   <h3 class='flex justify-center text-4xl font-bold'>
     {title}
   </h3>
+  <h4 class='flex justify-center text-2xl font-bold'>
+    {subtitle}
+  </h4>
   <p class='m-2 text-xl'>{description}</p>
 </div>
