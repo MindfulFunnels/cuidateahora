@@ -1,0 +1,12 @@
+---
+const { title, description } = Astro.props;
+---
+
+<div
+  class='grid items-center justify-between max-w-xl text-center transition-transform duration-700 shadow-lg bg-gradient-to-r from-secondary to-accent rounded-3xl hover:scale-105'
+>
+  <h3 class='flex justify-center text-4xl font-bold'>
+    {title}
+  </h3>
+  <p class='m-2 text-xl'>{description}</p>
+</div>

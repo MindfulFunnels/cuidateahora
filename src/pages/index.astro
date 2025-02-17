@@ -9,65 +9,50 @@ import WhatYouWillLearn from "../components/WhatYouWillLearn.astro";
 import History from "../components/History.astro";
 import ItsForYou from "../components/ItsForYou.astro";
 import Transformation from "../components/Transformation.astro";
+import VideosTestimonies from "../components/Videos-testimonies.astro";
 
 const { title, subtitle, eventDateForCountdown } = clientData;
 ---
 
 <Layout>
-  <div class='flex flex-col items-center w-full gap-20 pt-2 text-center'>
-    <div>
-      <div class='flex flex-col items-center justify-center gap-10 pb-10'>
-        <!-- Subtítulo con fondo translúcido -->
-        <div class='bg-opacity-100 rounded-lg shadow-xl'>
-          <h2
-            class='p-4 text-xl text-center rounded-lg text-accent md:text-2xl lg:text-3xl bg-primary bg-opacity-10'
-          >
-            Regístrate en este Evento Online Gratuito y descubre cómo liberar el
-            estrés, sanar dolores, relajar tu cuerpo y mejorar tu sueño con
-            técnicas de yoga y respiración guiada, tanto para principiantes como
-            para expertos. <span class='block pt-2 font-semibold underline'
-              >¡Transforma tu bienestar desde hoy!</span
-            >
-          </h2>
-        </div>
-        <Countdown deadline={eventDateForCountdown} client:load />
-        <Date />
-      </div>
-      <div
-        class='flex flex-col items-center justify-center w-full gap-10 md:gap-20 lg:flex-row'
-        id='register'
-      >
-        <RegisterBox client:only='react' />
-        <div>
-          <img
-            src='/header.jpg'
-            alt=''
-            class='h-[450px] rounded-lg border-4 border-primary transition-transform duration-300 hover:animate-swing'
-          />
-        </div>
-        <div
-          class='flex flex-col items-center justify-center gap-2'
-          id='register'
-        >
-        </div>
-      </div>
+  <div
+    class='flex flex-col items-center justify-center w-full max-w-6xl gap-6 p-4 text-center'
+  >
+    <h1
+      class='font-semibold text-2xl lg:text-3xl xl:text-5xl bg-clip-text text-transparent bg-gradient-to-tl from-[#ffa9a9] to-[#444444] pb-6'
+    >
+      Regístrate al evento online para liberar tensiones y estrés, recargar el
+      cuerpo y tener un sueño reparador
+    </h1>
+    <div class='flex flex-col gap-10'>
+      <Countdown deadline={eventDateForCountdown} client:load />
+    </div>
+    <div
+      class='flex flex-col items-center justify-center w-full gap-10 lg:flex-row'
+    >
+      <RegisterBox client:only='react' />
+      <Date />
     </div>
     <ItsForYou />
-    <CallAction text='Quiero liberar mi estrés y sentirme mejor' />
+    <CallAction
+      text='Quiero liberar mi estrés y sentirme mejor'
+      href='#register'
+    />
     <WhatYouWillLearn />
-    <CallAction text='Sí, quiero participar y sentirme mejor' />
+    <CallAction
+      text='Sí, quiero participar y sentirme mejor'
+      href='#register'
+    />
     <Transformation />
-    <!-- <CallAction text='Regístrate gratis ahora' /> -->
-    <!-- <WelcomeBonus /> -->
-    <CallAction text='Quiero mis regalos y mi acceso a la masterclass' />
+    <CallAction
+      text='Quiero mis regalos y mi acceso a la masterclass'
+      href='#register'
+    />
+    <VideosTestimonies />
     <History />
-    <!-- <CallAction text='Regístrate gratis ahora' /> -->
-    <!-- <h2 class='text-3xl text-center text-accent'>
-      💡 No dejes pasar esta oportunidad de regalarte bienestar y paz interior.
-    </h2> -->
-    <h2 class='text-3xl text-center text-accent'>
+    <h2 class='text-xl text-center text-accent'>
       📅 Reserva tu lugar ahora y prepárate para la transformación.
     </h2>
-    <CallAction text='Quiero asistir a la masterclass' />
+    <CallAction text='Quiero asistir a la masterclass' href='#register' />
   </div>
 </Layout>

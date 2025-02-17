@@ -1,5 +1,5 @@
 ---
-import PointLearning from "./PointLearning.astro";
+import PointsSection from "./PointsSection.astro";
 
 interface Point {
   title: string;
@@ -38,27 +38,12 @@ const description = {
 };
 ---
 
-<div>
-  <h2
-    class='mb-8 text-3xl font-thin text-center text-accent sm:text-4xl md:text-5xl lg:text-6xl'
-  >
-    {description.title}
-  </h2>
-  <ul class='flex flex-col gap-4 mt-4 text-left list-none'>
-    {
-      description.points.map((point: Point) => (
-        <li>
-          <PointLearning title={point.title} description={point.description} />
-        </li>
-      ))
-    }
-  </ul>
-  <h3
-    class='mt-2 text-lg leading-snug sm:text-xl md:text-2xl lg:text-3xl text-accent'
-  >
-    No importa si <span class='underline'
-      >has practicado yoga o relajación antes.</span
-    > Este evento está diseñado para que cualquier persona pueda beneficiarse sin
-    importar su edad o experiencia previa.
-  </h3>
-</div>
+<PointsSection description={description} />
+<h3
+  class='max-w-4xl mt-2 text-lg leading-snug sm:text-xl md:text-2xl lg:text-3xl text-accent'
+>
+  No importa si <span class='underline'
+    >has practicado yoga o relajación antes.</span
+  > Este evento está diseñado para que cualquier persona pueda beneficiarse sin importar
+  su edad o experiencia previa.
+</h3>

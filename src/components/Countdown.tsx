@@ -59,7 +59,7 @@ const Countdown = ({ deadline }: { deadline: string }) => {
       {["days", "hours", "minutes", "seconds"].map((unit, index) => (
         <div
           key={index}
-          className='timer flex flex-col items-center bg-accent border border-secondary rounded-xl shadow-lg py-2 px-4 min-w-[60px] max-w-[80px] md:min-w-[80px] md:max-w-[100px] lg:min-w-[100px] lg:max-w-[120px]'
+          className='timer flex flex-col items-center bg-accent/50 border border-secondary rounded-xl shadow-lg py-2 px-4 min-w-[60px] max-w-[80px] md:min-w-[80px] md:max-w-[100px] lg:min-w-[100px] lg:max-w-[120px]'
         >
           <div className='flex items-center justify-center w-full text-center'>
             <h3

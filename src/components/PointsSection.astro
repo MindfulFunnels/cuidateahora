@@ -1,0 +1,32 @@
+---
+import PointLearning from "./PointLearning.astro";
+
+const { description } = Astro.props;
+
+// const colors = ["from-[#C66271]", "from-[#62C6B7]", "from-[#C6B762]"];
+const colors = ["from-[#C66271]"];
+---
+
+<div class='flex flex-col items-center max-w-4xl gap-4'>
+  <h2
+    class='text-3xl font-thin text-accent sm:text-4xl md:text-5xl lg:text-6xl'
+  >
+    {description.title}
+  </h2>
+  <ul class='flex flex-col gap-4 text-left list-none'>
+    {
+      description.points.map((point: Point, index: number) => {
+        const color = colors[index % colors.length];
+        return (
+          <li>
+            <PointLearning
+              title={point.title}
+              description={point.description}
+              color={color}
+            />
+          </li>
+        );
+      })
+    }
+  </ul>
+</div>

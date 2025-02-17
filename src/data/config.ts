@@ -41,12 +41,11 @@ const config = {
     image: "/luis-garre.JPEG",
   },
   colors: {
-    primary: "#F3D5B5", // Fondo suave y cálido
-    secondary: "#A47148", // Para textos destacados
-    background: "#FFEDD8", // Fondo principal
-    // accent: "#6F4518", // Detalles o botones
-    accent: "#bf8950",
-    highlight: "#8B5E34", // Decoraciones y contornos
+    primary: "#e4b4bb",
+    secondary: "#d68f99", // Rosa claro pastel
+    background: "#FFFFFF", // Blanco suave con ligero tono rosado
+    accent: "#c66271", // Coral/rosa fuerte (invariable)
+    highlight: "#FFE8EC", // Rosa pálido, ideal para fondos secundarios
   },
   imagesLinks: {
     luis: "https://i.ibb.co/XxXMmFsb/58361.jpg",

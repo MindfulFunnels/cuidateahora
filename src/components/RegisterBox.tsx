@@ -89,8 +89,14 @@ export default function RegisterBox() {
     }
   };
   return (
-    <div className='text-left text-black'>
-      <form className='flex flex-col gap-6 p-6 rounded-lg shadow-lg w-full max-w-[500px] items-center justify-center mx-auto'>
+    <div className='text-left text-white'>
+      {/* <h2 className='text-4xl font-bold text-center text-white ' id='register'>
+        Registrate
+      </h2> */}
+      <form
+        className='flex flex-col gap-6 p-6 rounded-lg shadow-lg w-full max-w-[500px] items-center justify-center mx-auto '
+        id='register'
+      >
         <input
           ref={nameRef}
           type='text'
@@ -98,7 +104,7 @@ export default function RegisterBox() {
           name='name'
           required
           placeholder='Tu nombre y apellido*'
-          className='w-full p-4 text-lg text-black border rounded-lg border-accent bg-primary focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-1 focus:ring-offset-secondary'
+          className='w-full p-4 text-lg border rounded-lg border-primary bg-accent focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-1 focus:ring-offset-secondary'
         />
         <input
           ref={emailRef}
@@ -107,7 +113,7 @@ export default function RegisterBox() {
           name='email'
           required
           placeholder='Tu email*'
-          className='w-full p-4 text-lg text-black border rounded-lg border-accent bg-primary focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-1 focus:ring-offset-secondary'
+          className='w-full p-4 text-lg border rounded-lg border-primary bg-accent focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-1 focus:ring-offset-secondary'
         />
 
         <PhoneInput
@@ -136,11 +142,11 @@ export default function RegisterBox() {
           enableSearch={true} // Habilitar búsqueda
           containerStyle={{
             width: "100%",
-            background: "#F3D5B5", // Fondo uniforme
+            background: "#c66271", // Fondo uniforme
             borderRadius: "8px",
             display: "flex",
             alignItems: "center",
-            border: "1px solid #C49A6C", // Borde con color consistente
+            border: "1px solid #e4b4bb", // Borde con color consistente
             transition: "box-shadow 0.3s ease-in-out", // Suavizar el focus
           }}
           searchPlaceholder='Buscar' // Placeholder del campo de búsqueda
@@ -150,42 +156,37 @@ export default function RegisterBox() {
             padding: "16px",
             paddingLeft: "60px", // Deja espacio para mostrar el prefijo
             fontSize: "18px",
-            fontFamily: "Lilita One",
-            backgroundColor: "#F3D5B5", // Mismo fondo que los inputs
-            color: "#000000", // Texto consistente con el diseño
+            backgroundColor: "#c66271", // Mismo fondo que los inputs
+            color: "#FFF", // Texto consistente con el diseño
             border: "none",
             borderRadius: "8px",
             outline: "none",
-            boxShadow: "0 0 0 0px rgba(0, 0, 0, 0)", // Sin focus inicialmente
           }}
           buttonStyle={{
-            backgroundColor: "#F3D5B5", // Fondo uniforme
+            backgroundColor: "#c66271", // Fondo uniforme
             border: "none",
-            borderRight: "1px solid #C49A6C", // Separador del dropdown
+            borderRight: "1px solid #e4b4bb", // Separador del dropdown
             borderRadius: "8px",
-            // padding: "0 10px",
             width: "50px", // Tamaño suficiente para el prefijo
             justifyContent: "left",
           }}
           dropdownStyle={{
-            // backgroundColor: "#F3D5B5", // Fondo del dropdown
+            // backgroundColor: "#e4b4bb", // Fondo del dropdown
             color: "#000000", // Texto consistente
             borderRadius: "8px",
             boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)", // Sombra sutil
           }}
           searchStyle={{
-            // backgroundColor: "#F3D5B5", // Fondo del campo de búsqueda
+            // backgroundColor: "#e4b4bb", // Fondo del campo de búsqueda
             color: "#000000", // Texto del campo de búsqueda
-            border: "1px solid #C49A6C",
+            border: "1px solid #e4b4bb",
             borderRadius: "8px",
             padding: "2px",
           }}
         />
-
-        <p className='text-text-accent text-[10px] pt-[-10px]'>
+        <p className='text-black text-[10px]'>
           Por favor, ingresa el prefijo de tu país
         </p>
-
         {errorMessages && (
           <p className='text-red-600 text-[10px] text-center'>
             {errorMessages}
@@ -212,9 +213,16 @@ export default function RegisterBox() {
             </svg>
           </div>
         ) : (
+          // <button
+          //   type='submit'
+          //   className='w-full px-10 py-4 text-lg font-semibold text-white transition-transform duration-300 bg-red-600 rounded-lg hover:bg-red-700 hover:scale-105'
+          //   onClick={handleSubmit}
+          // >
+          //   Registrarme
+          // </button>
           <button
             type='submit'
-            className='w-full px-10 py-4 text-lg font-semibold text-white transition-transform duration-300 bg-red-600 rounded-lg hover:bg-red-700 hover:scale-105'
+            className='w-full px-10 py-4 text-lg font-semibold text-white transition-transform duration-700 from-[#ff0000] to-[#ff5e00] rounded-lg bg-gradient-to-t hover:bg-gradient-to-br hover:from-[#ff5e00] hover:to-[#ff0000] hover:scale-105'
             onClick={handleSubmit}
           >
             Registrarme
