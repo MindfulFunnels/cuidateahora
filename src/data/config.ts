@@ -17,19 +17,19 @@ const config = {
   },
   eventDate: {
     firstClass: {
-      day: 11,
+      day: 18,
       month: "MARZO",
       year: 2025,
       hour: 19,
     },
     lastClass: {
-      day: 13,
+      day: 20,
       month: "MARZO",
       year: 2025,
       hour: 19,
     },
   },
-  eventDateForCountdown: "2025-03-11T19:00:00", // Year-Month-DayThours:minutes:seconds
+  eventDateForCountdown: "2025-03-18T19:00:00", // Year-Month-DayThours:minutes:seconds
   contactEmail: "contacto@cliente.com",
   ctaButton: {
     text: "Cambiar mi vida",
