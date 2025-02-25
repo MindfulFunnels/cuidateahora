@@ -82,7 +82,7 @@ export const POST: APIRoute = async ({ request }) => {
         <h1 class="saludo">¡Hola ${name}</span>! 👋</h1>        
         <p class="subtitle">Tu camino hacia el bienestar y la serenidad ha comenzado. Bienvenido/a a EVENTO YOGA CUÍDATE AHORA, el espacio donde descubrirás cómo alcanzar una plenitud integral y reconectar con tu paz interior a través del yoga y mindfulness.</p>
         <div>
-            <p>📅 Fecha del evento: Martes 11 y Jueves 13 de Marzo 2025</p>
+            <p>📅 Fecha del evento: Martes 18 y Jueves 20 de Marzo 2025</p>
             <p>
                 ⏰ Hora: 🇪🇸 19:00 Hs - 🇦🇷 15:00 Hs - 🇨🇴 13:00 Hs - 🇲🇽 12:00 Hs - 🇺🇸 13:00 Hs
             </p>
