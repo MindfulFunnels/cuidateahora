@@ -16,7 +16,7 @@ const { title, subtitle, eventDateForCountdown } = clientData;
 
 <Layout>
   <div
-    class='flex flex-col items-center justify-center w-full max-w-6xl gap-20 p-4 text-center'
+    class='flex flex-col gap-20 justify-center items-center p-4 w-full max-w-6xl text-center'
   >
     <div>
       <h1
@@ -26,13 +26,13 @@ const { title, subtitle, eventDateForCountdown } = clientData;
         cuerpo y tener un sueño reparador
       </h1>
       <div class='flex flex-col gap-10'>
-        <Countdown deadline={eventDateForCountdown} client:load />
         <div
-          class='flex flex-col items-center justify-center w-full gap-6 lg:flex-row'
+          class='flex flex-col gap-6 justify-center items-center w-full lg:flex-row'
         >
           <RegisterBox client:only='react' />
           <Date />
         </div>
+        <Countdown deadline={eventDateForCountdown} client:load />
       </div>
     </div>
     <ItsForYou />

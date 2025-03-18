@@ -47,7 +47,7 @@ const Countdown = ({ deadline }: { deadline: string }) => {
   if (timeLeft.live) {
     return (
       <>
-        <h2 className='text-4xl font-bold text-accent'>¡Estamos en vivo!</h2>
+        <h2 className='text-4xl font-bold text-accent'>Ya paso la primer clase! aqui te dejo el video</h2>
         <div className='flex flex-col gap-10 justify-center items-center w-full text-5xl font-bold text-accent'>
           <div className='absolute rounded-xl rotate-1 bg-black/10 w-[310px] h-[160px] md:w-[360px] md:h-[260px] lg:w-[410px] lg:h-[360px] xl:w-[710px] xl:h-[360px]'>
             {" "}

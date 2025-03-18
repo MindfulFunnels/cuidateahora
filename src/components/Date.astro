@@ -16,16 +16,16 @@ const eventTimes = [
 const spainFlag = "fi fi-es";
 ---
 
-<div class='flex flex-col items-center gap-4'>
-  <DayInfo
-    title='Día 01'
-    subtitle='Martes 18 de Marzo'
-    description='Descubre cómo el yoga puede tranformar tu bienestar y calmar tu mente. '
-  />
+<div class='flex flex-col gap-4 items-center'>
   <DayInfo
     title='Día 02'
     subtitle='Jueves 20 de Marzo'
     description='Relajación guiada para mejorar tu descanso y despertar llena de energía.'
+  />
+  <DayInfo
+    title='✅ Día 01'
+    subtitle='Martes 18 de Marzo - ABAJO TE DEJO EL VIDEO DE LA PRIMERA CLASE'
+    description='Descubre cómo el yoga puede tranformar tu bienestar y calmar tu mente. '
   />
 </div>
 
@@ -33,7 +33,7 @@ const spainFlag = "fi fi-es";
 <!-- <ul class='grid grid-cols-1 gap-4 mt-6 text-lg md:grid-cols-2 lg:grid-cols-4'>
   {
     eventTimes.map((event) => (
-      <li class='flex items-center justify-center gap-2 text-2xl text-secondary'>
+      <li class='flex gap-2 justify-center items-center text-2xl text-secondary'>
         <span class={event.flag} />
         <span class='font-bold'>{event.country}</span>:
         <span class='text-accent'>{event.time}</span>
