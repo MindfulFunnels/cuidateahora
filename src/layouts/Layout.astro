@@ -8,12 +8,18 @@ import "/node_modules/flag-icons/css/flag-icons.min.css";
 ---
 
 <!doctype html>
-<html lang='en'>
+<html lang='es'>
   <head>
     <meta charset='UTF-8' />
     <meta name='viewport' content='width=device-width' />
+    <title>{title}</title>
     <link rel='icon' type='image/svg+xml' href='/favicon.png' />
-    <meta name='generator' content={Astro.generator} />
+
+    <meta
+      name='description'
+      content='2 Masterclass Gratis para deshacerte de la ansiedad, el estrés, y sentirte mejor.'
+    />
+
     <meta
       name='viewport'
       content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes'
@@ -21,13 +27,11 @@ import "/node_modules/flag-icons/css/flag-icons.min.css";
     <meta property='og:title' content={title} />
     <meta
       property='og:description'
-      content='Cuídate ahora, el evento online para liberar tensiones, estrés, recargar el cuerpo y tener un sueño reparador'
+      content='2 Masterclass Gratis para deshacerte de la ansiedad, el estrés, y sentirte mejor.'
     />
-    <meta property='og:image' content='/favicon.png' />
+    <meta property='og:image' content='/og.png' />
     <meta property='og:url' content='https://cuidateahora.vercel.app/' />
     <meta property='og:type' content='website' />
-
-    <title>{title}</title>
     <script
       is:inline
       src='https://cdn.jsdelivr.net/npm/flowbite@3.0.0/dist/flowbite.min.js'
@@ -57,7 +61,7 @@ import "/node_modules/flag-icons/css/flag-icons.min.css";
     </div>
     <!-- Contenido principal -->
     <div class='relative z-10'>
-      <Header title={title} />
+      <Header title='Cuídate Ahora' />
       <slot />
       <Footer />
     </div>

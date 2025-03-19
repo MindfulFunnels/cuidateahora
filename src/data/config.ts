@@ -1,5 +1,6 @@
 const config = {
-  title: "Cuídate Ahora",
+  title:
+    "Cuídate Ahora - Un programa para cambiar tu vida, dejar el estrés y la ansiedad de lado, y sentirte mejor. Hecho por Lucia Martinez",
   titleColor: "sepia3",
   subtitle: "",
   name: "Lucia Martinez",
